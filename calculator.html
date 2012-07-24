@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="en" />
+	<link rel="stylesheet" href="css/styles_320x460.css" type="text/css" media="screen" charset="utf-8" />
+</head>
+<body id="calc">
+
+	<div id="main">
+		<div class="popup-calculator">
+			<div class="home_btn"></div>
+			<div class="logo"></div>
+			
+			<form action="" onsubmit="return runCalc()" id="calc">
+
+				<div class="calc-current">
+					<select class="calc-drop">
+							  <option value="0" selected="selected">(Please Select One)</option>
+							  <option value=".5">Hydrocodone</option>
+							  <option value=".5">Methadone</option>
+							  <option value=".333">Morphine</option>
+							  <option value=".5">Oxycodone</option>
+							  <option value="1.0">Oxymorphone</option>
+					</select>
+				</div>
+
+				<div class="calc-total">
+					<input type="text" class="calc-input" value="0" onkeypress="validateNum(event)" maxlength="3" />
+				</div>
+
+				<div class="calc-calculate"></div>
+
+				<div class="calc-text calc-conversion">0</div>
+				<div class="calc-text calc-daily">0</div>
+				<div class="calc-text calc-doses">0</div>
+
+				<div class="btn-refresh"></div>
+				<div class="btn-help"></div>
+
+			</form>
+			<div class="inst"></div>
+			<div class="isi"></div>
+			<div class="pi"></div>
+		</div>
+	</div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script src="js/script.js"></script>
+	
+</body>
+</html>
